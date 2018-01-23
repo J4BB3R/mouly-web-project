@@ -1,0 +1,7 @@
+# Services
+
+nginx
+mariadb-server
+php-fpm
+
+# Php Libs

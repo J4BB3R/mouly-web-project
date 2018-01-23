@@ -1,10 +1,18 @@
-FROM debian:latest
+FROM debian:stretch
+MAINTAINER Johan Maurel # AKA Mamasita la Zoulette
 
-MAINTAINER Johan Maurel
+# Install dependencies
+COPY requirements.txt /opt
+RUN apt-get update -q && apt-get install -yq --no-install-recommends $(cat /opt/requirements.txt | sed "/^[ \t]*$/d" | grep -v '#' )
 
-RUN apt-get update
-RUN apt-get install nginx php-fpm mariadb
+# Cfg dump
+COPY site.conf /etc/nginx/sites-available/default
 
-COPY run.sh /
+# Project root
+RUN mkdir -p /var/www/project
 
-CMD["/run.sh"]
+# Wrapper set
+COPY wrapper /usr/local/bin
+RUN chmod +x /usr/local/bin/wrapper
+
+CMD ["/usr/local/bin/wrapper"]
