@@ -22,4 +22,5 @@ class headView extends head {
 
   public function addJSfile(/*string*/ $name = null) { parent::addJSfile("scripts/".$name."js"); }
 
-} ?>
+}
+?>

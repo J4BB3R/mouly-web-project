@@ -13,8 +13,9 @@
 
     public function sendPage() {
       echo "<!DOCTYPE Html>\n"
-          . "<html>\n"
           . $this->head->generateHead()."\n"
+          . "<html>\n"
+          ."<body><h1>le MouLy</h1></body>"
           . "</html>";
     }
 

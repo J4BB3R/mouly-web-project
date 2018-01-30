@@ -1,0 +1,94 @@
+.header_container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  max-width: 100%;
+  background-color: #28a745;
+  border-bottom: 2px solid #1d7b33;
+  background-image: linear-gradient(-180deg, #28a745 0%, #23933d 90%);
+}
+
+@font-face {
+	font-family: "header_title";
+	src: url('/contents/fonts/title.otf');
+}
+
+.header_title {
+  vertical-align: middle;
+  display: inline;
+  font-size: 1rem;
+  font-family: "header_title";
+  color: #ececec;
+  margin: auto;
+  text-shadow: 0px -1px #1d7b33;
+}
+
+.header_logo_container {
+  display: inline;
+  float: left;
+  padding-left: 0.7em;
+  max-width: 80%;
+  margin: 0.5em;
+}
+
+.header_logo_container > img {
+  vertical-align: middle;
+  display: inline;
+  max-width: 2em;
+  padding-left: 0.7em;
+  margin-left: 1em;
+  border-left: 1px solid #ececec;
+  -webkit-filter: drop-shadow( 0px -1px #1d7b33 );
+  filter: drop-shadow( 0px -1px #1d7b33 );
+}
+
+.header_toolbox_container {
+  overflow: auto;
+  display: inline;
+  float: right;
+  padding-right: 0.7em;
+  max-width: 80%;
+  margin: 0.5em;
+}
+
+.header_toolbox_container > img {
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline;
+  max-width: 2em;
+  -webkit-filter: drop-shadow( 0px -1px #1d7b33 );
+  filter: drop-shadow( 0px -1px #1d7b33 );
+}
+
+.header_searchbar {
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 100%;
+  min-width: 80%;
+  margin-right: 0.7em;
+  padding: 0.3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+  border: 0px solid #1d7b33;
+  border-top: 1px solid #1d7b33;
+  border-bottom: 2px solid #28a745;
+  background-color: #ececec;
+}
+
+.header_searchbar > input {
+  display: inline;
+  text-decoration: none;
+  border-radius: 0rem 0.4rem 0.4rem 0rem;
+  border: 0px solid #ececec;
+}
+
+.header_searchbar > button {
+  display: inline-block;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  background-image: url("/contents/pictures/search.svg");
+}

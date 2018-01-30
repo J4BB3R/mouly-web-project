@@ -10,11 +10,12 @@ elif [ "$1" == "-r" ] || [ -z "$(docker images | grep $name)" ]; then
   echo
   echo "#######--------    IMAGE IS BUILDING    --------########"
   echo
-  docker build -t $name deploy/
+  docker build -t $name deploy/ &&
   echo
   echo "#######--------    IMAGE BUILD    --------########"
   echo
 fi
+docker container prune
 docker run --name mwp -d -p80:80 -v$(pwd):/var/www/project $name
 echo
 echo "#######--------   CONTAINER IS RUNNING    --------########"
