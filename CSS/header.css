@@ -67,11 +67,9 @@
   display: inline-block;
   max-width: 100%;
   min-width: 80%;
-  margin-right: 0.7em;
-  padding: 0.3em;
-  padding-left: 1em;
-  padding-right: 1em;
-  border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+  margin-left: 0.5em;
+  margin-right: 0.3em;
+  border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
   border: 0px solid #1d7b33;
   border-top: 1px solid #1d7b33;
   border-bottom: 2px solid #28a745;
@@ -79,10 +77,13 @@
 }
 
 .header_searchbar > input {
+  height: 100%;
+  background-color: inherit;
   display: inline;
   text-decoration: none;
-  border-radius: 0rem 0.4rem 0.4rem 0rem;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
   border: 0px solid #ececec;
+  text-align: center;
 }
 
 .header_searchbar > button {
