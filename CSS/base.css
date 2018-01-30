@@ -3,7 +3,11 @@ body {
   background-color: #eee;
 }
 
-/* button {
+a {
+  text-decoration: none;
+}
+
+.base_button {
   padding-top: 1%;
   padding-bottom: 0.5%;
   padding-left: 1%;
@@ -12,14 +16,12 @@ body {
   background-image: linear-gradient(-180deg, #f2f2d6 0%, #e5e5ce 90%);
   text-align: center;
   color: #333;
-  border: solid 0px;
+  border: 1px solid #d1d1d1;
   border-bottom: 3px solid #339933;
-  border-left: 1px solid #339933;
-  border-right: 1px solid #339933;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
-button:hover {
+.base_button:hover {
   text-decoration: none;
   color: #444;
   background-image: linear-gradient(-180deg, #e2e2d0 0%, #c6c6ac 90%);
@@ -27,4 +29,3 @@ button:hover {
   border-left: 1px solid #2a802a;
   border-right: 1px solid #2a802a;
 }
-*/
