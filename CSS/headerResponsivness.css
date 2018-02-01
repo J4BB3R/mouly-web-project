@@ -1,0 +1,72 @@
+@media (max-width: 720px) {
+
+  body {
+      overflow: none;
+  }
+
+  .header_container {
+    background: none;
+    border: none;
+  }
+
+  .header_title {
+    float: left;
+  }
+
+  .header_logo_container {
+    display: table;
+    float: none;
+    position: relative;
+    max-width: none;
+    margin: 0em;
+    width: 100%;
+    background-color: #28a745;
+    border-bottom: 2px solid #1d7b33;
+    background-image: linear-gradient(-180deg, #28a745 0%, #23933d 90%);
+  }
+
+  .header_publish {
+    padding: 0em;
+    margin-top: 0.3em;
+    margin-right: 1em;
+    border: 1px solid #ececec;
+    border-radius: 3px;
+    float: right;
+  }
+
+  .header_publish:active {
+    background-color: rgba(22,22,22,0.3);
+    fill:
+  }
+
+  .header_toolbox_container {
+    display: table;
+    max-width: none;
+    width: 100%;
+    position: relative;
+    margin: 0em;
+    padding: 0.5em;
+    border-bottom: 2px solid rgba(27,31,35,0.6);
+    background-image: linear-gradient(-180deg, #ececec 0%, #c4c4c4 90%);
+  }
+
+  .header_searchbar {
+    margin-left: 0.7em;
+    margin-right: 0em;
+    border-top: 1px solid rgba(27,31,35,0.6);
+    border-bottom: 2px solid rgba(27,31,35,0.5);
+  }
+
+  .header_searchbar > input {
+    display: inline;
+  }
+
+  .header_search_register, .header_search_connect {
+    margin-right: 0.7em;
+    float: right;
+  }
+
+  .header_search_register {
+    float: right;
+  }
+}
