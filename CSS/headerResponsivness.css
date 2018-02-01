@@ -1,7 +1,7 @@
 @media (max-width: 720px) {
 
   body {
-      overflow: none;
+      overflow: hidden;
   }
 
   .header_container {
@@ -36,7 +36,6 @@
 
   .header_publish:active {
     background-color: rgba(22,22,22,0.3);
-    fill:
   }
 
   .header_toolbox_container {
@@ -51,14 +50,37 @@
   }
 
   .header_searchbar {
-    margin-left: 0.7em;
+      background-color: rgba(0,0,0,0);
+    margin-left: 1.5em;
     margin-right: 0em;
-    border-top: 1px solid rgba(27,31,35,0.6);
-    border-bottom: 2px solid rgba(27,31,35,0.5);
+    border: 0px solid;
+    border-radius: 0px;
   }
 
   .header_searchbar > input {
+      background-color: #f1f1f1;
+      border: 1px solid rgba(27,31,35,0.5);
+      border-bottom: 2px solid rgba(27,31,35,0.5);
+      border-top: 1px solid rgba(33,33,33,0.3);
+      border-radius: 3px;
     display: inline;
+    font-size: 0.9em;
+      margin-left: 0.5em;
+      padding-right: 1em;
+      padding-left: 1em;
+  }
+
+  .header_searchbar > button {
+    border: 1px solid rgba(27,31,35,0.5);
+    border-bottom: 2px solid rgba(27,31,35,0.4);
+    border-top: 1px solid rgba(233,233,233,0.2);
+    background-color: #269e41;
+    border-radius: 3px;
+      height: 100%;
+    padding: 2em;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+    margin: 0px;
   }
 
   .header_search_register, .header_search_connect {
